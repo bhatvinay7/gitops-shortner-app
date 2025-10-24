@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ingress-controller
+  namespace: argocd
+spec:
+  project: ingress
+  source:
+    repoURL: https://github.com/bhatvinay7/shortner-gitops.git
+    targetRevision: staging
+    path: ingress-controller
+    directory:
+      recurse: true    
+  destination:
+      server: https://kubernetes.default.svc
+      namespace: shortner
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true       

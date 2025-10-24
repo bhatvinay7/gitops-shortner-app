@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: shortner-web
+  namespace: argocd
+spec:
+  description: url-shortner scalable microservice architechture
+  sourceRepos:
+    - https://github.com/bhatvinay7/shortner-gitops.git
+  destinations:
+    - server: https://kubernetes.default.svc
+      namespace: shortner
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'

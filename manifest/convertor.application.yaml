@@ -4,7 +4,7 @@ metadata:
   name: converter-app
   namespace: argocd
 spec:
-  project: shortner-converter
+  project: default
   source:
     repoURL: https://github.com/bhatvinay7/shortner-gitops.git
     targetRevision: staging

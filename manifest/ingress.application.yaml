@@ -4,7 +4,7 @@ metadata:
   name: ingress-controller
   namespace: argocd
 spec:
-  project: default
+  project: ingress
   source:
     repoURL: https://github.com/bhatvinay7/shortner-gitops.git
     targetRevision: staging

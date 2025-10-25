@@ -4,7 +4,7 @@ metadata:
   name: analytics-app
   namespace: argocd
 spec:
-  project: default
+  project: shortner-analytics
   source:
     repoURL: https://github.com/bhatvinay7/shortner-gitops.git
     targetRevision: staging

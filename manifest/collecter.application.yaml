@@ -4,7 +4,7 @@ metadata:
   name: collector-app
   namespace: argocd
 spec:
-  project: default
+  project: shortner-collector
   source:
     repoURL: https://github.com/bhatvinay7/shortner-gitops.git
     targetRevision: staging

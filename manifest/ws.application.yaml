@@ -4,7 +4,7 @@ metadata:
   name: ws-app
   namespace: argocd
 spec:
-  project: default
+  project: shortner-ws
   source:
     repoURL: https://github.com/bhatvinay7/shortner-gitops.git
     targetRevision: staging

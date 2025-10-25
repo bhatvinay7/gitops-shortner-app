@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/bhatvinay7/shortner-gitops.git
     targetRevision: staging
-    path:  services/data-collector.yaml
+    path:  data-collector.yaml
     directory:
       recurse: true    
   destination:

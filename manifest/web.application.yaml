@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/bhatvinay7/shortner-gitops.git
     targetRevision: staging
-    path:  services/url-web
+    path:  services/we.yaml
     directory:
       recurse: true    
   destination:

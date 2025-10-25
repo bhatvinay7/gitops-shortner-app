@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/bhatvinay7/shortner-gitops.git
     targetRevision: staging
-    path: services/url-shorturl-converter
+    path: services/converter.yaml
     directory:
       recurse: true    
   destination:
